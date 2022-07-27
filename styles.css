@@ -3,15 +3,18 @@
 *::before {
     box-sizing: border-box;
     font-family: monospace;
-    /* outline: 1px solid black; */
+    /* outline: 1px solid red; */
     color: white;
     margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: #f6f0ed;
     margin: 0px;
-    scroll-behavior: smooth;
 }
 
 .container {
@@ -40,6 +43,7 @@ body {
 .link {
     font-size: 15px;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 .link:hover {
