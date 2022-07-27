@@ -10,6 +10,7 @@
 body {
     background-color: #f6f0ed;
     margin: 0px;
+    scroll-behavior: smooth;
 }
 
 .blog {
@@ -21,34 +22,84 @@ body {
 }
 
 .viewsection {
-    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .cardcontainer {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 40px;
 }
 
 .cards p {
     color: black;
     text-align: center;
+    width: 250px;
 }
 
 .cards {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 
 .card {
-    width: 200px;
-    height: 100px;
+    width: 250px;
+    height: 200px;
     border-radius: 2vw;
     overflow: hidden;
     border: #3b82f6 solid 3px;
 }
+
+
+.quotesection {
+    display: flex;
+    justify-content: center;
+    background-color: #E5E7EB;
+}
+
+.quote {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.quote p {
+    color: black;
+    font-size: 30px;
+}
+
+.calltoactioncontainer {
+    background-color: #3b82f6;
+    padding: 2% 5% 2% 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.ctatext{
+    text-align: left;
+}
+
+.ctabtn {
+    margin-left: auto;
+}
+
+.calltoactionbtn {
+    color: #3b82f6;
+    height: 3rem;
+    width: 8rem;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
 
 
 
@@ -89,11 +140,16 @@ h1 {
     margin-bottom: 10px;
 }
 
-h1 strong {
+.top strong {
     text-decoration: underline;
 }
 
-p {
+p strong {
+    color:#3b82f6;
+    text-decoration: underline;
+}
+
+.headerpara {
     font-size: 15px;
     width: 90%;
     text-align: left;
@@ -114,7 +170,7 @@ img {
     margin-right: 300px;
 }
 
-input {
+.headersignup {
     color: white;
     margin: 10px 5% 0 5%;
     height: 3rem;
@@ -126,5 +182,15 @@ input {
     font-size: 15px;
 }
 
+footer {
+    background-color: #1f2937;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+footer h3{
+    margin: 0%;
+}
 
