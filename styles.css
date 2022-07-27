@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #f6f0ed;
+    background-color: white;
     margin: 0px;
 }
 
@@ -26,6 +26,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 30px;
+    font-size: 20px;
 }
 
 .links {
@@ -37,7 +39,6 @@ body {
 }
 
 .link {
-    font-size: 15px;
     text-decoration: none;
     scroll-behavior: smooth;
 }
@@ -47,7 +48,6 @@ body {
 }
 
 .logo {
-    font-size: 15px;
     margin-left: 50px;
 }
 
@@ -108,20 +108,17 @@ img {
     max-height: 100%;
 }
 
-@media only screen and (max-width: 700px) {
-
-    .top {
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-    img {
-        padding-top: 2rem;
-    }
+.viewsection {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
-.viewsection {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+.cardstitle{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-decoration: underline ;
 }
 
 .cardcontainer {
@@ -162,13 +159,14 @@ img {
 }
 
 .quote {
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .quote p q{
     color: black;
     font-size: 30px;
+    font-style: italic;
 }
 .quote p{
     color: black;
@@ -179,11 +177,20 @@ q::before, q::after {
     color: black;
 }
 
+.quoteauthor {
+    color:#3b82f6;
+    text-decoration: underline;
+}
+
+.quoteauthor:hover {
+    color:#3b83f6d0;
+}
+
 .calltoactioncontainer {
     background-color: #3b82f6;
     padding: 2% 5% 2% 5%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
     display: flex;
     align-items: center;
 }
@@ -219,15 +226,6 @@ p {
     margin-inline-end: 0px;
 }
 
-.quoteauthor {
-    color:#3b82f6;
-    text-decoration: underline;
-}
-
-.quoteauthor:hover {
-    color:#3b83f6d0;
-}
-
 
 footer {
     background-color: #1f2937;
@@ -241,3 +239,19 @@ footer h3{
     margin: 0%;
 }
 
+
+@media only screen and (max-width: 800px) {
+
+    .top {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    img {
+        padding-top: 2rem;
+    }
+    .calltoactioncontainer {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+}
