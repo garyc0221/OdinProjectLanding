@@ -30,6 +30,19 @@ body {
     font-size: 20px;
 }
 
+.menu {
+    cursor: pointer;
+}
+
+.menubars {
+    display: none;
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    margin-right: 30px;
+}
+
 .links {
     display: flex;
     justify-content: space-between;
@@ -81,7 +94,7 @@ h1 {
 }
 
 button {
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .headersignup {
@@ -113,12 +126,12 @@ img {
     padding-bottom: 2rem;
 }
 
-.cardstitle{
+.cardstitle {
     color: black;
     font-size: 30px;
     text-align: center;
     margin-bottom: 3rem;
-    text-decoration: underline ;
+    text-decoration: underline;
 }
 
 .cardcontainer {
@@ -161,29 +174,34 @@ img {
 .quote {
     margin-left: 20%;
     margin-right: 20%;
+    color: black;
+    font-size: 30px;
 }
 
-.quote p q{
+.quote q {
     color: black;
     font-size: 30px;
     font-style: italic;
 }
-.quote p{
-    color: black;
-    font-size: 30px;
+
+.quote strong {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 25px;
 }
 
-q::before, q::after {
+q::before,
+q::after {
     color: black;
 }
 
 .quoteauthor {
-    color:#3b82f6;
+    color: #3b82f6;
     text-decoration: underline;
 }
 
 .quoteauthor:hover {
-    color:#3b83f6d0;
+    color: #3b83f6d0;
 }
 
 .calltoactioncontainer {
@@ -195,7 +213,7 @@ q::before, q::after {
     align-items: center;
 }
 
-.ctatext{
+.ctatext {
     text-align: left;
 }
 
@@ -235,7 +253,7 @@ footer {
     align-items: center;
 }
 
-footer h3{
+footer h3 {
     margin: 0%;
 }
 
@@ -246,12 +264,21 @@ footer h3{
         flex-wrap: wrap;
         justify-content: flex-start;
     }
+
     img {
         padding-top: 2rem;
     }
+
     .calltoactioncontainer {
         margin-left: 5%;
         margin-right: 5%;
     }
-    
+
+    .links {
+        display: none;
+    }
+
+    .menubars {
+        display: block;
+    }
 }
