@@ -269,6 +269,8 @@ footer h3 {
 
     img {
         padding-top: 2rem;
+        min-width: 250px;
+        max-width: 65%;
     }
 
     .calltoactioncontainer {
