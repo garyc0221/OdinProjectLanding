@@ -172,8 +172,7 @@ img {
 }
 
 .quote {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: 5%;
     color: black;
     font-size: 30px;
 }
@@ -260,9 +259,14 @@ footer h3 {
 
 @media only screen and (max-width: 800px) {
 
+    .container{
+        padding-bottom: 1rem;
+    }
+
     .top {
         flex-wrap: wrap;
         justify-content: flex-start;
+        padding-left: 50px;
     }
 
     img {
@@ -281,4 +285,9 @@ footer h3 {
     .menubars {
         display: block;
     }
+
+    .quotesection {
+        
+    }
+
 }
